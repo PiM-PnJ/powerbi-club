@@ -597,6 +597,20 @@ if(!is_null($events)){
                                     'https://liff.line.me/1654945197-be2v6lWG'
                                 ),     
                             );
+                            $actionBuilder6 = array(
+                                new UriTemplateActionBuilder(
+                                    'EIS Smartport',// ข้อความแสดงในปุ่ม
+                                    'https://liff.line.me/1654945197-dV18AlkY'
+                                ),
+                                new UriTemplateActionBuilder(
+                                    'Refinery Dashboard', // ข้อความแสดงในปุ่ม
+                                    'https://liff.line.me/1654945197-6Je5g3J7'
+                                ),
+                                new UriTemplateActionBuilder(
+                                    'Example 1', // ข้อความแสดงในปุ่ม
+                                    'https://liff.line.me/1654945197-eEZ5vXkj'
+                                ),     
+                            );
                             $replyData = new TemplateMessageBuilder('Carousel',
                                 new CarouselTemplateBuilder(
                                     array(
@@ -629,7 +643,13 @@ if(!is_null($events)){
                                             'ทำความรู้จัก ETL',
                                             'https://bcplineoa.bangchak.co.th/powerbi-club/uploadimage/c5.png',
                                             $actionBuilder5
-                                        ),                                         
+                                        ),     
+                                        new CarouselColumnTemplateBuilder(
+                                            'EP.06',
+                                            'ทำความรู้จัก ETL',
+                                            'https://bcplineoa.bangchak.co.th/powerbi-club/uploadimage/c5.png',
+                                            $actionBuilder5
+                                        ),                                     
                                     )
                                 )
                             );
